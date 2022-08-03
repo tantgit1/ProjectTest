@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="test">
+    <!--  登录   -->
+    <test name="login">
+        <classes>
+            <class name="com.testng.test.demo2.SuiteConfig"/>
+            <class name="com.testng.test.demo2.LoginTest"/>
+        </classes>
+    </test>
+    <!--  支付   -->
+    <test name="pay">
+        <classes>
+            <class name="com.testng.test.demo2.SuiteConfig"/>
+            <class name="com.testng.test.demo2.PayTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suitename">
+    <test name="runAll">
+        <classes>
+            <class name="com.testng.test.demo3.GroupsOnClass1"></class>
+            <class name="com.testng.test.demo3.GroupsOnClass2"></class>
+            <class name="com.testng.test.demo3.GroupsOnClass3"></class>
+
+        </classes>
+    </test>
+    <test name="onlyRunStu">
+        <groups>
+            <run>
+<!--    加上group、run、include标签 这样只会运行 @Test中name="stu"的类，其他类即使class标签引用了，也不会执行  -->
+                <include name="stu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.testng.test.demo3.GroupsOnClass1"></class>
+            <class name="com.testng.test.demo3.GroupsOnClass2"></class>
+            <class name="com.testng.test.demo3.GroupsOnClass3"></class>
+        </classes>
+    </test>
+
+</suite>
